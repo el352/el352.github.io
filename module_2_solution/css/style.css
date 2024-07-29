@@ -8,20 +8,20 @@ body {
     padding: 0;
 }
 
-h1 {
+header {
     text-align: center;
     margin: 20px 0;
     font-size: 2em;
 }
 
-.container {
+main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
 }
 
-.section {
+.menu-item {
     border: 1px solid black;
     padding: 30px;
     margin: 10px;
@@ -29,7 +29,7 @@ h1 {
     width: 100%;
 }
 
-.section-title {
+.menu-item .title {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -40,18 +40,19 @@ h1 {
 }
 
 /* Background colors for each section */
-.section:nth-child(1) {
+#chicken .title {
     background-color: gray; 
 }
 
-.section:nth-child(2) {
+#salad .title {
     background-color: gray; 
 }
 
-.section:nth-child(3) {
+#sushi .title {
     background-color: gray; 
 }
 
+/* Desktop Style */
 @media (min-width: 992px) {
     .section {
         width: 30%;
