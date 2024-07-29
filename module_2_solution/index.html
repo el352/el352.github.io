@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+</head>
+    
+<style>
+    
+/*General Styles*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menu-item {
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.menu-item .title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+#chicken .title {
+    background-color: gray;
+}
+
+#salad .title {
+    background-color: gray;
+}
+
+#sushi .title {
+    background-color: gray;
+}
+
+/* Desktop Style */
+@media (min-width: 992px) {
+    .section {
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 45%;
+    }
+    #sushi {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+    }
+}
+    
+</style>    
+    
+<body>
+    <header>
+        <h1>Our Menu</h1>
+    </header>
+    <main>
+        <section class="menu-item" id="chicken">
+            <div class="title">Chicken</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+        </section>
+        <section class="menu-item" id="salad">
+            <div class="title">Beef</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+        </section>
+        <section class="menu-item" id="sushi">
+            <div class="title">Sushi</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+        </section>
+    </main>
+</body>
+</html>
